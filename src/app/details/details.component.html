@@ -1,1 +1,14 @@
-<p>details works!</p>
+<h1>Detalles de Personajes</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Imagen</th>
+    <th>Detalles</th>
+  </tr>
+  <tr *ngFor="let character of characters">
+    <td>{{ character.name }}</td>
+    <td><img [src]="character.image" alt="{{ character.name }} Image"></td>
+    <td><a [routerLink]="['./landing/landing.component', character.id]">Ver Detalles</a></td>
+  </tr>
+</table>

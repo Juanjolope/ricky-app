@@ -1,1 +1,6 @@
-<p>landing works!</p>
+<div *ngIf="characterDetails">
+    <h1>{{ characterDetails.name }}</h1>
+    <p>Especie: {{ characterDetails.species }}</p>
+    <button (click)="goBack()">Atrás</button>
+  </div>
+  
