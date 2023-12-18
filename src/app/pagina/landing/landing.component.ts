@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ApiService } from '../service/api.service';
+import { ApiService } from '../../service/api.service';
 
 @Component({
   selector: 'app-landing',
@@ -33,7 +33,7 @@ export class LandingComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/details']);
   }
 }
 
